@@ -1,0 +1,15 @@
+TOP     = ../..
+include $(TOP)/mk/common.make
+
+MODULE  = FitMap
+MODDIR  = $(datadir)/$(MODULE)
+SRCS    = __init__.py ChimeraExtension.py fitcmd.py fitlist.py fitmap.py \
+	  gui.py move.py search.py sequence.py session.py
+OBJS    = $(SRCS:.py=.pyc)
+CLEAN   = $(OBJS)
+
+all: $(OBJS)
+
+install: all
+	-mkdir -p $(MODDIR)
+	$(RSYNC) $(SRCS) $(OBJS) $(DATA) $(MODDIR)
