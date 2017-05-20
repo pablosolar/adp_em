@@ -1,4 +1,8 @@
 # -----------------------------------------------------------------------------
+# Class to handle pdb transformations
+#
+
+# -----------------------------------------------------------------------------
 # Apply a rotation and translation to atoms.
 #
 def transform_atom_coordinates_adp(atoms, xform):
