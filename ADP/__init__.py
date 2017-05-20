@@ -1,3 +1,2 @@
-#from fitmap import map_overlap_and_correlation, overlap_and_correlation
-#from fitmap import move_selected_atoms_to_ove_atoms_maximum, mto_maxima
-#from fitmap import locate_maximum
+# Init class to initialize the ADP EM plugin in Chimera
+# Can be empty if no commands are needed
