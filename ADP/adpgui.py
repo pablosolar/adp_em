@@ -548,7 +548,7 @@ class ADP_EM_Dialog(ModelessDialog):
     S.config(command=T.yview)
     T.config(yscrollcommand=S.set)
 
-    # Text widget for process log that will showthe standard output of the process
+    # Read first line
     line = adp_em_process.stdout.readline()
     # Variable to check the process status and show its output in a friendly format to the user
     process_progress = False
