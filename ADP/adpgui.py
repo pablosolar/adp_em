@@ -46,7 +46,7 @@ class ADP_EM_Dialog(ModelessDialog):
   # ADP in Chimera indicator
   adp_em_chimera_opt = "--chimera"
 
-  # No solutions
+  # No pdb solutions files generated
   adp_em_chimera_no_save = "--no_save"
 
   # Fitting criterion
@@ -102,16 +102,6 @@ class ADP_EM_Dialog(ModelessDialog):
   # Master function for dialog contents
   #
   def fillInUI(self, parent):
-
-    #self.requested_halt = False
-    self.xform_handler = None
-    self.last_relative_xform = None
-
-    self.max_steps = 2000
-    self.ijk_step_size_min = 0.01
-    self.ijk_step_size_max = 0.5
-    self.last_status_time = 0
-    self.status_interval = 0.5    # seconds
 
     t = parent.winfo_toplevel()
     self.toplevel_widget = t
