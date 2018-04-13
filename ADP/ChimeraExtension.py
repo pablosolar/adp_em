@@ -4,8 +4,6 @@
 #
 import chimera.extension
 
-# -----------------------------------------------------------------------------
-#
 class ADPEM_EMO(chimera.extension.EMO):
 
     def name(self):
